@@ -5,6 +5,11 @@ var projectRoot = path.resolve(__dirname, '../')
 var glob = require('glob');
 var entries = getEntry('./src/module/**/*.js'); // 获得入口js文件
 
+var autoprefixer = require('autoprefixer');
+var nested = require('postcss-nested');
+var cssnext = require('postcss-cssnext');
+var flexFallback = require('postcss-flex-fallback');
+
 var env = process.env.NODE_ENV
 // check env & config/index.js to decide weither to enable CSS Sourcemaps for the
 // various preprocessor loaders added to vue-loader at the end of this file
@@ -65,18 +70,20 @@ module.exports = {
         }
       },
       //在原有基础上加上一个postcss的loader就可以了
-      {
-        test:/\.css$/,
-        loaders:['css-loader','postcss-loader']
-      }
+      // {
+      //   test:/\.css$/,
+      //   loaders:['css-loader','postcss-loader'],
+      //   exclude: /src\/common/
+      // }
     ]
   },
   vue: {
     loaders: utils.cssLoaders({ sourceMap: useCssSourceMap }),
+    autoprefixer: true,
     postcss: [
-      require('autoprefixer')({
-        browsers: ['last 2 versions']
-      })
+      nested(),
+      cssnext({ browsers: ['last 2 versions', 'Android >= 2.1', 'iOS >= 7.0'] }),
+      flexFallback(),
     ]
   }
 }
