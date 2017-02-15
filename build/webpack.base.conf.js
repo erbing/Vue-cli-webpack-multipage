@@ -63,6 +63,11 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      //在原有基础上加上一个postcss的loader就可以了
+      {
+        test:/\.css$/,
+        loaders:['css-loader','postcss-loader']
       }
     ]
   },
