@@ -1,7 +1,8 @@
 <template>
   <div class="word">
     <h1>{{ msg }}</h1>
-    <h2>mgt Linkss</h2>
+    <h2>Mgt Project with element-ui</h2>
+    <h2>show some element-ui components</h2>
 </template>
 
 <script>
