@@ -1,5 +1,6 @@
 # vue-cli多页面应用
 > A Vue.js project
+>include element-ui and vur-router
 
 ## Build Setup
 
