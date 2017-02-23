@@ -2,7 +2,7 @@
   <div id="app">
     <img src="./images/logo.png">
     <hello></hello>
-    <uiButton type="success">test</uiButton>
+    <uiButton type="success" style="width: 200px">test</uiButton>
   </div>
 </template>
 
