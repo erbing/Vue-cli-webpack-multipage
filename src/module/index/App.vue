@@ -3,6 +3,7 @@
     <img src="./images/logo.png">
     <hello></hello>
     <uiButton type="success" style="width: 200px">test</uiButton>
+    <i class="icon-download"></i>
   </div>
 </template>
 

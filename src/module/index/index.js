@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App'
 
-import Runvue from 'runvue/dist/runvue.js'    // 引入 runvue UI
-import 'runvue/dist/style.css'
+import Runvue from 'runvue'    // 引入 runvue UI
+import 'runvue/style.css'
 
 Vue.use(Runvue)
 
