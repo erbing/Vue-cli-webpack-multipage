@@ -1,14 +1,14 @@
 import Vue from 'vue'
 // 引入 饿了么UI
-import Element from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+// import Element from 'element-ui'
+// import 'element-ui/lib/theme-default/index.css'
 // 引入 vue-router
 import VueRouter from 'vue-router'
 
 import App from './App'
 import Use from './user/user'
 
-Vue.use(Element)
+// Vue.use(Element)
 Vue.use(VueRouter)
 
 const routes = [{

@@ -3,6 +3,7 @@
     <h1>{{ msg }}</h1>
     <h2>Mgt Project with element-ui</h2>
     <h2>show vue-router and vuex [user]</h2>
+  </div>
 </template>
 
 <script>
