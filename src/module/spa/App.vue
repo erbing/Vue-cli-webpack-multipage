@@ -6,7 +6,7 @@
 
 <script>
   import 'common/css/reset.css';
-  import Hi from 'components/Hi/Hi'
+  import Hi from 'components/Hi'
 
   export default {
     name: 'app',

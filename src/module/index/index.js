@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import App from './App'
 
-import Runvue from 'runvue'    // 引入 runvue UI
-import 'runvue/style.css'
+// import Runvue from 'runvue'    // 引入 runvue UI
+// import 'runvue/style.css'
 
-Vue.use(Runvue)
+// Vue.use(Runvue)
 
 /* eslint-disable no-new */
 new Vue({

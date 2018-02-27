@@ -1,17 +1,16 @@
 <template>
-  <div class="word">
+  <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Mgt Project with element-ui</h2>
-    <h2>show vue-router and vuex [user]</h2>
+    <h2>Essential Links</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'word',
+  name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your mgt Appssssss'
+      msg: 'Welcome to Your Vue.js App'
     }
   }
 }
@@ -35,8 +34,5 @@ li {
 
 a {
   color: #42b983;
-}
-.word{
-    text-align: center
 }
 </style>
