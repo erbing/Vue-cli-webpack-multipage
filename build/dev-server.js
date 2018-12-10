@@ -54,6 +54,7 @@ const staticPath = path.posix.join(
   config.dev.assetsPublicPath,
   config.dev.assetsSubDirectory
 );
+
 app.use(staticPath, express.static("./static"));
 
 module.exports = app.listen(port, function(err) {
